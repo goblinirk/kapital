@@ -19,25 +19,21 @@
 	<header id="header">
 		<h1 class="mainlabel">Капитал</h1>
 		<div id="usermnu">
-			<a href="/page/1/">О НАС</a>
-			<a href="/page/2/">ИНФОРМАЦИЯ</a>
-			<a href="/page/5/">НОВОСТИ</a>
-			<a href="/page/6/">КОНТАКТЫ</a>
-			<a href="/site/login">РЕГИСТРАЦИЯ</a>
+			{{ this.widget('MainMenu', {'rootId':0}, true) | raw }}
 		</div>
 	</header><!-- #header-->
 
 	<section id="middle">
-		<img src="/images/kapital/image.png" />
+		<img src="/images/kapital/image.png" style="box-shadow: 0px 6px 11px #585858;" />
 		<div id="midwrap">
-			<div style="margin: 0 auto;width: 570px;border-top: 1px solid #e0e0e0;border-bottom: 1px solid #e0e0e0;margin-top: 20px;">
-				<h1 style="font-family: 'Times New Roman'; font-size: 34px; ">ВАШИ ДЕНЬГИ - НАША РАБОТА</h1>
+			<div style="margin: 0 auto;width: 630px;border-top: 1px solid #e0e0e0;border-bottom: 1px solid #e0e0e0;margin-top: 20px;text-align: center;">
+				<h1 style="font-family: 'Times New Roman'; font-size: 34px;padding: 16px 0px; ">ВАШИ ДЕНЬГИ - НАША РАБОТА</h1>
 			</div>
 		<div id="container">
 			<div id="content"><div id="contwrap">
 
 
-				{% block content %}
+				{% block maincontent %}
 
 				{% endblock %}
 			</div></div><!-- #content-->

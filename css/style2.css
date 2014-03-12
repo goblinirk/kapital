@@ -46,7 +46,7 @@ input {
 /* Header
 -----------------------------------------------------------------------------*/
 #header {
-	height: 80px;
+	height: 70px;
 	background: url(/images/kapital/header.png) repeat-x;
 }
 
@@ -136,8 +136,17 @@ color: #4BA9D1;
 font-family: "Times New Roman";
 font-weight: normal;
 font-size: 50px;
-margin-top: 18px;
+margin-top: 25px;
 }
+h1.contlabel {
+color: #00405C;
+font-family: "Times New Roman";
+font-weight: normal;
+font-size: 22px;
+margin-top: 25px;
+margin-bottom: 30px;
+}
+
 #usermnu {
 	float: right;
 	margin: 31px 0px 0px 0px;
@@ -183,3 +192,12 @@ margin: 15px;
 #LoginForm_username{
 	width: 206px !important;
 }
+
+div.contact-l {float:left;width:620px;}
+div.contact-l input.pole { padding:0 5px; width:265px;}
+div.contact-l textarea {width:96%; padding:5px 2%; height:75px;}
+div.contact-l table { border:none;float:left; width:100%;}
+div.contact-l table td { padding:7px; vertical-align:top;}
+div.contact-l table th { padding:7px 0; vertical-align:top; width:175px; text-align:left; font-weight:normal;}
+div.contact-l .btn2 { padding:7px 25px;float:right;}
+div.contact-r {float:left;width:370px; margin-left:60px;}

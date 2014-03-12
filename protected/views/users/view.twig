@@ -1,0 +1,14 @@
+{% extends "views/layouts/index_inner.twig" %}
+
+{% block maincontent %}
+<div class="b-dop-serv">
+	<h1 class="contlabel">ВАШ ПРОФИЛЬ</h1>
+    <dl>
+    	<dt>Ваше имя: </dt><dd>{{ model.realname | raw }}</dd>
+    	<dt>Телефон: </dt><dd>{{ model.phone | raw }}</dd>
+    	<dt>E-Mail: </dt><dd>{{ model.email | raw }}</dd>
+    	<hr />
+    	<dt>Тарифный план: </dt><dd>Старт</dd>
+    </dl>
+</div><!--end b-dop-serv-->
+{% endblock %}

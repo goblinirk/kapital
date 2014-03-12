@@ -76,6 +76,7 @@ return array(
 				'pages/'=>'pages/index',
 				'news/'=>'pages/shownewslist',
 				'news/<id:.*?>'=>'pages/shownews',
+				'user/profile/'=>'users/view',
 				'admin/pages/'=>'pages/admin',
 				'admin/navigation/'=>'menus/admin',
 				'admin/forms/'=>'site/admin',
@@ -89,6 +90,7 @@ return array(
 				'admin/add_gallery/'=>'galleries/create',
 				'admin/edit_gallery/<id:\d+>/'=>'galleries/update',
 				'admin/delete_gallery/<id:\d+>/'=>'galleries/delete',
+				'feedback/send/'=>'FbMessages/create',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
@@ -101,7 +103,7 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=insite_samus',
+			'connectionString' => 'mysql:host=localhost;dbname=kapital',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => 'drop',

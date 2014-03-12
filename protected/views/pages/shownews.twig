@@ -1,7 +1,7 @@
-{% extends "views/layouts/inner.twig" %}
+{% extends "views/layouts/index_inner.twig" %}
 
-{% block innercontent %}
-    <h3 style="margin:0px; padding-bottom: 0px; font-weight: normal;">{{ model.label | e }}</h3>
+{% block maincontent %}
+    <h3 style="margin:0px; padding-bottom: 0px; font-weight: normal;font-size: 20px;padding: 5px 0 10px;">{{ model.label | e }}</h3>
     <i style="font-style:italic;font-size: 13px;">Дата публикации: {{ App.dateFormatter.format("dd MMM y",strtotime(model.create_date)) }}
     </i>
     <br /><br />
